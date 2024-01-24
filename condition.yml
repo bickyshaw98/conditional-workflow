@@ -1,5 +1,5 @@
 name: example-workflow
-#adding a comment
+#adding a comment.
 on: [push]
 jobs:
   Dev-deploy:
