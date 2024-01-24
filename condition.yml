@@ -1,8 +1,7 @@
 name: example-workflow
-#adding a comment.
 on: [push]
 jobs:
-  Dev-deploy:
+  production-deploy:
     if: github.repository == 'bickyshaw98/conditional-workflow'
     runs-on: ubuntu-latest
     steps:
@@ -11,4 +10,3 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g bats
-
